@@ -19,10 +19,10 @@ def Weather_PartiallyCloudy(cover):
     return cloudy
     
 def Weather_Overcast(cover):
-    if 0 < cover <= 60:
+    if 0 <= cover <= 60:
         overcast = 0
     elif 60 < cover < 80:
-        overcast = -0.05 * cover -3
+        overcast = 0.05 * cover -3
     elif 80 <= cover <= 110:
         overcast = 1
     return overcast
